@@ -14,12 +14,15 @@
     <title>VideoHelper</title>
 	</head>
 	<body>
+		<!-- HEADER OF HOME PAGE -->
 		<div class="container-fluid p-header">
 			<div class="container">
 				<h1>Welcome to VideoHelper</h1>
 				<p id="header-p">A website in which anyone can start learning how to make videos and/or find applications that suit their interests, be it photography, 3d modeling or audio composing!</p>
 			</div>
 		</div>
+
+		<!-- NAVIGATION BAR -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
 		  <a class="navbar-brand" href="#">Navbar</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,10 +58,22 @@
 		    </form>
 		  </div>
 		</nav>
-		<div class="container">
-			noice
-		</div>
 
+		<!-- VIDEO BACKGROUND -->
+		<header>
+		  <div class="overlay"></div>
+		  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+		    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+		  </video>
+		  <div class="container h-100">
+		    <div class="d-flex h-100 text-center align-items-center">
+		      <div class="w-100 text-white">
+		        <h1 class="display-3">Video Header</h1>
+		        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+		      </div>
+		    </div>
+		  </div>
+		</header>
 
 
 
