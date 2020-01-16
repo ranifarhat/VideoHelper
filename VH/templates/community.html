@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/general_css.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cmnty.css') }}">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,9 +13,82 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>VideoHelper</title>
+    <title>Community</title>
   </head>
   <body>
+  
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg font-size-2r navbar-dark bg-custom-d">
+    
+    <!-- WEBSITE NAME -->
+    <a class="navbar-brand" href="#" style="font-size: 2rem;">VideoHelper</a>
+    
+    <!-- TOGGLE DROP-DOWN-LSIT ON SCREEN SIZE -->
+    <button class="navbar-toggler bg-custom-d" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse bg-custom-d" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto bg-custom-d">
+      
+      <!-- FIRST ITEM ON NAV-BAR -->
+      <li class="nav-item bg-custom-d">
+        <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <!-- SECOND ITEM ON NAV-BAR -->
+      <li class="nav-item bg-custom-d active">
+        <a class="nav-link" href="{{ url_for('community') }}">Community</a>
+      </li>
+
+      <!-- DROP-DOWN-LIST ITEM -->
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+      </li> -->
+
+      <!-- WEBPAGE IN WORK/NOT AVAILABLE -->
+      <li class="nav-item bg-custom-d">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH BAR ON RIGHT OF NAV-BAR -->
+    <!-- <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="container padding-ud-2r">
+      <!-- <div class=""></div> -->
+      <ul class="h-100 text-center align-items-center font-size-2r">
+        <il>
+          <!-- <table>
+            <td>
+              <tr class="align-l">
+                general
+              </tr>
+              <tr class="align-r">
+                (:
+              </tr>
+            </td>
+          </table> -->
+          <p class="align-l">General</p>
+          <p class="align-r">Members Online</p>
+          <div style="clear: both;"></div>
+        </il>
+      </ul>
+    </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

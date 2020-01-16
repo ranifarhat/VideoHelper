@@ -9,7 +9,11 @@ app.secret_key = "8hf23782926hd4gdgdt72"
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+	return render_template("home.html")
+
+@app.route("/community")
+def community():
+	return render_template("community.html")
 
 #####################
 
