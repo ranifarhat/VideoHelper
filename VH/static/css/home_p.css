@@ -1,7 +1,47 @@
-.bg-custom {
-    background-color: #232323;
+/** {
+  color: #232323;
+  font-family: 
+}*/
+
+* {
+  outline: none;
 }
 
+.font-size-2r {
+  font-size: 1.4rem;
+}
+
+.text-l { /* Light colored text */
+  color: #F7F7F7;
+}
+
+.bg-custom-d { /* Dark colored background */
+  background-color: #232323;
+}
+
+.bg-custom-l { /* Light colored background */
+  background-color: #F7F7F7;
+}
+
+.search-cstm-l { /* Light colored search-bar */
+  background-color: #F7F7F7;
+  color: #232323;
+  font-size: 2rem;
+  width: 6rem;
+  border: none;
+  border-bottom: 0px solid #F7F7F7;
+  height: auto;
+  -webkit-transition: width 0.4s, border-bottom 0.4s;
+}
+
+.search-cstm-l:hover { /* Light colored search-bar */
+  width: 20rem;
+  height: auto;
+  border-bottom: 2px solid #232323;
+  -webkit-transition: width 0.6s, border-bottom 0.6s;
+}
+
+/* HEADER PROPERTIES */
 .p-header {
 	background-color: #232323;
 	color: #F7F7FF;
@@ -17,6 +57,7 @@
 	font-size: 1.5rem;
 }
 
+/* FOR NAVIGATION BAR */
 @media (max-width: 767px) {
   .navbar-nav .nav-item + .nav-item {
     margin-left: 0;
@@ -26,7 +67,7 @@
   }
 }
 
-/* FOR VIDEO BACKGROUND*/
+/* FOR VIDEO BACKGROUND */
 header {
   position: relative;
   background-color: black;
@@ -74,4 +115,15 @@ header .overlay {
   header video {
     display: none;
   }
+}
+
+/* CONTENT AFTER VIDEO */
+.padding-ud-2r {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.margin-ud-2r {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
