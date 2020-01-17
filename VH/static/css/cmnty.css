@@ -1,3 +1,7 @@
 * {
   background-color: #F7F7F7;
 }
+
+.pad-left-none {
+	padding-left: 0px;
+}

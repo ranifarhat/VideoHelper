@@ -46,11 +46,6 @@
   margin-bottom: 2rem;
 }
 
-/* VEWING HELPERS */
-.bright-b-border { /* Gives elemenet clear bllue border */
-  border: 3px solid blue;
-}
-
 .align-r {
   float: right;
 }
@@ -58,3 +53,13 @@
 .align-l {
   float: left;
 }
+
+.hr {
+  border-bottom: 0.2rem solid #232323;
+}
+
+/* VEWING HELPERS */
+.bright-b-border { /* Gives elemenet clear bllue border */
+  border: 3px solid blue;
+}
+
