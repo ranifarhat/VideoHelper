@@ -13,6 +13,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+
     <title>Community</title>
   </head>
   <body>
@@ -72,17 +75,21 @@
   <div class="container-fluid">
     <div class="container padding-ud-2r">
       <!-- <div class=""></div> -->
-      <ul class="h-100 text-center align-items-center font-size-2r pad-left-none">
+      <ul class="h-100 text-center align-items-center font-size-2r pad-left-none padding-ud-2r">
         <il>
-          <p class="align-l">General</p>
-          <p class="align-r">Members Online</p>
-          <div style="clear: both;"></div>
+          <div class="container">
+            <p class="align-l marg-none"><img class="hw-4r" src="">General</p>
+            <p class="align-r marg-none">Members Online<br>10</p>
+            <div style="clear: both;"></div>
+          </div>
         </il>
         <div class="hr"></div>
         <il>
-          <p class="align-l">General</p>
-          <p class="align-r">Members Online</p>
-          <div style="clear: both;"></div>
+          <div class="container">
+            <p class="align-l marg-none"><img class="hw-4r" src="">General</p>
+            <p class="align-r marg-none">Members Online<br>10</p>
+            <div style="clear: both;"></div>
+          </div>
         </il>
       </ul>
     </div>

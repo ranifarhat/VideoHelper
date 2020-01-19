@@ -55,7 +55,29 @@
 }
 
 .hr {
-  border-bottom: 0.2rem solid #232323;
+  border-bottom: 0.1rem solid #232323;
+}
+
+.pad-left-none {
+  padding-left: 0px;
+}
+
+.pad-none {
+  padding: 0px;
+}
+
+.marg-none {
+  margin: 0px;
+}
+
+.hw-max {
+  height: 100%;
+  width: auto;
+}
+
+.hw-4r {
+  height: 4rem;
+  width: 4rem;
 }
 
 /* VEWING HELPERS */
