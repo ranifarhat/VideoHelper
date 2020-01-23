@@ -85,6 +85,15 @@
   width: 14rem;
 }
 
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+  float: right;
+}
+
 /* VEWING HELPERS */
 .bright-b-border { /* Gives elemenet clear bllue border */
   border: 3px solid blue;
