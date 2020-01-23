@@ -15,6 +15,10 @@ def home():
 def community():
 	return render_template("community.html")
 
+@app.route("/signup")
+def signupin():
+	return render_template("signupin.html")
+
 #####################
 
 

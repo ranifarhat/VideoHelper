@@ -1,0 +1,36 @@
+.reg-box {
+	height: 30rem;
+	width: 50rem;
+	align-content: center;
+	margin: 0 auto;
+}
+
+.bg-img {
+	width: 25rem;
+	width: 50%;
+	height: 100%;
+	background-image: url('https://images.pexels.com/photos/320617/pexels-photo-320617.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+	background-size: 200%;
+	background-position: 30% 50%;
+	background-color: #232323;
+	float: left;
+}
+
+.upin-form {
+	/*width: 10%;*/
+	text-align: center;
+}
+
+.sui-table {
+	width: 50%;
+	background-color: #4B3FFC;
+}
+
+.def-btn {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background-color: rgba(0,0,0,0);
+	color: #f7f7ff
+}

@@ -80,6 +80,11 @@
   width: 4rem;
 }
 
+.hw-14r {
+  height: 14rem;
+  width: 14rem;
+}
+
 /* VEWING HELPERS */
 .bright-b-border { /* Gives elemenet clear bllue border */
   border: 3px solid blue;

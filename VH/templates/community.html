@@ -37,12 +37,17 @@
       
       <!-- FIRST ITEM ON NAV-BAR -->
       <li class="nav-item bg-custom-d">
-        <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
       </li>
 
       <!-- SECOND ITEM ON NAV-BAR -->
       <li class="nav-item bg-custom-d active">
-        <a class="nav-link" href="{{ url_for('community') }}">Community</a>
+        <a class="nav-link" href="{{ url_for('community') }}">Community <span class="sr-only">(current)</span></a>
+      </li>
+
+      <!-- THIRD ITEM ON NAV-BAR -->
+      <li class="nav-item bg-custom-d">
+        <a class="nav-link" href="{{ url_for('signupin') }}">Sign Up/In</a>
       </li>
 
       <!-- DROP-DOWN-LIST ITEM -->
