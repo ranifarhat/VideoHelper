@@ -1,3 +1,14 @@
 * {
   background-color: #F7F7F7;
 }
+
+.group-btn {
+	outline: none;
+	text-align: center;
+	color: #F7F7FF;
+	border: none;
+	text-decoration: none;
+	/*box-shadow: 0px 0px 10px #232323;*/
+	background-color: #4B3FFC;
+	height: 2.5rem;
+	border-radius: 1%;
