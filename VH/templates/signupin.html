@@ -77,42 +77,114 @@
 
     <div class="container-fluid">
       <div class="container">
+
         <div class="display-3 text-center padding-ud-2r">Join Us</div>
-        <!-- <center> -->
-          <!-- Form(pic + form) -->
+
           <div class="reg-box"> 
-            <div class="bg-img">
-            </div>
             <div class="upin-form">
+              <!-- SIGN IN AND SIGN UP TITLES -->
               <table class="sui-table">
                 <tr>
                   <td>
-                    <button class="def-btn text-center align-items-center">
+                    <button class="def-btn text-center align-items- up">
                       <p class="marg-none">Sign up</p>
                     </button>
                   </td>
                   <td>
-                  <button class="def-btn text-center align-items-center">
+                  <button class="def-btn text-center align-items-center in">
                     <p class="marg-none">Sign in</p>
                   </button>
                   </td>
                 </tr>
               </table>
-              <form>
-                <div class="container">
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" name="email" placeholder="Enter Email" class="align-r" required>
-                  <br>
-                  <label for="name"><b>Username</b></label>
-                  <input type="text" name="name" placeholder="Enter username" class="align-r" required>
-                  <br>
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" name="psw" placeholder="Enter Password" class="align-r" required>
-                  <br>
-                  <label for="psw-rep"><b>Confirm Password</b></label>
-                  <input type="password" name="psw-rep" placeholder="Repeat Password" class="align-r" required>
-                </div>
+
+              <!-- SIGN UP FORUM -->
+              <form class="signup-forum" action="/signup-in" method="POST">
+                <table class="container text-center font-size-2r">
+                  <tr>
+                    <td class="padding-ud-2r">
+                      <label for="email"><b>Email</b></label>
+                    </td>
+                    <td>
+                      <input type="text" name="email" placeholder="Enter Email" class="under-border-text-sub" required>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="padding-ud-2r">
+                      <label for="name"><b>Username</b></label>
+                      </td>
+                      <td>
+                      <input type="text" name="name" placeholder="Enter username" class="under-border-text-sub" required>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="padding-ud-2r">
+                      <label for="psw"><b>Password</b></label>
+                      </td>
+                      <td>
+                      <input type="password" name="psw" placeholder="Enter Password" class="under-border-text-sub" required>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="padding-ud-2r">
+                      <label for="psw-rep"><b>Confirm Password</b></label>
+                      </td>
+                      <td>
+                      <input type="password" name="psw-rep" placeholder="Repeat Password" class="under-border-text-sub" required>
+                    </td>
+                  </tr>
+                </table>
+
+                <input class="font-size-2r group-btn-gen margin-ud-2r" type="submit" value="Submit">
               </form>
+
+
+
+              <form class="signin-forum" action="/signup-in" method="POST">
+                <table class="container text-center font-size-2r">
+                  <tr>
+                    <td class="padding-ud-2r">
+                      <label for="name"><b>Username</b></label>
+                      </td>
+                      <td>
+                      <input type="text" name="name" placeholder="Enter username" class="under-border-text-sub" required>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="padding-ud-2r">
+                      <label for="psw"><b>Password</b></label>
+                      </td>
+                      <td>
+                      <input type="password" name="psw" placeholder="Enter Password" class="under-border-text-sub" required>
+                    </td>
+                  </tr>
+                </table>
+
+                <input class="font-size-2r group-btn-gen margin-ud-2r" type="submit" value="Submit">
+              </form>
+
+
+
+
+
+
+              {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                  <ul class=flashes>
+                  {% for message in messages %}
+                    <li>{{ message }}</li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              {% endwith %}
+              {% block body %}{% endblock %}
+
+              
+
             </div>
           </div>
       </div>
@@ -132,5 +204,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
   </body>
 </html>
